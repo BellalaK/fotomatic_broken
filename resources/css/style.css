@@ -84,6 +84,7 @@ header .desktoplogo {
   font-family: "Roboto Mono", monospace;
   font-size: 24px;
   color: #4a4a4a;
+  margin-left: 30px;
 }
 
 header .desktop {
@@ -94,6 +95,35 @@ header .desktop {
   margin-left: auto;
   margin-right: 30px;
 }
+
+@media only screen and (min-width: 760px) and (orientation: portrait) {
+  header .mobile {
+    display: none;
+  }
+
+  header .desktop {
+    display: block;
+  }
+
+  header .desktop ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .desktop li {
+    padding: 0;
+  }
+
+  header .desktop .button {
+    padding: 0.1875rem 0.5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
 
 @media only screen and (max-width: 760px) {
   header .desktop {
