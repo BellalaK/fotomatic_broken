@@ -96,35 +96,6 @@ header .desktop {
   margin-right: 30px;
 }
 
-@media only screen and (min-width: 760px) and (orientation: portrait) {
-  header .mobile {
-    display: none;
-  }
-
-  header .desktop {
-    display: block;
-  }
-
-  header .desktop ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  header .desktop li {
-    padding: 0;
-  }
-
-  header .desktop .button {
-    padding: 0.1875rem 0.5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
-}
-
-
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
@@ -151,6 +122,35 @@ header .desktop {
   }
 
   header .mobile .button {
+    padding: 0.1875rem 0.5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1026px) and (orientation: portrait) {
+  header .mobile {
+    display: none;
+  }
+
+  header .desktop {
+    display: contents;
+  }
+
+  header .desktop ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 420px;
+  }
+
+  header .desktop li {
+    padding: 0;
+  }
+
+  header .desktop .button {
     padding: 0.1875rem 0.5rem;
     background-color: #9dc20b;
     line-height: 1.6;
