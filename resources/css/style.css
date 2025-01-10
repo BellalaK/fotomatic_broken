@@ -102,7 +102,7 @@ header .desktop {
 
 /* Media Queries */
 /* tablet */
-@media only screen and (min-width: 450px) and (max-width: 760px) {
+@media only screen and (min-width: 500px) and (max-width: 760px) {
   header .mobile {
     display: none;
   }
@@ -130,7 +130,7 @@ header .desktop {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   /* Mobile */
   header .desktop {
     display: none;
@@ -262,6 +262,17 @@ header .desktop {
     height: 20rem;
   }
 
+  #sign-up-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    padding: 0 1rem;
+    margin: 0;
+    display: flex;
+  }
+
   #sign-up-cta h1 {
     font-size: 2.25rem;
   }
@@ -269,6 +280,11 @@ header .desktop {
   #sign-up-cta h2 {
     font-size: 2rem;
   }
+
+  #sign-up-cta .email {
+    display: none;
+  }
+
 }
 
 /* Features Section */
