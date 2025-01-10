@@ -80,6 +80,10 @@ header .mobile {
   display: none;
 }
 
+header .tablet {
+  display: none;
+}
+
 header .desktoplogo {
   font-family: "Roboto Mono", monospace;
   font-size: 24px;
@@ -96,7 +100,38 @@ header .desktop {
   margin-right: 30px;
 }
 
+/* Media Queries */
+/* tablet */
+@media only screen and (min-width: 760px) and (max-width: 1026px) {
+  header .mobile {
+    display: none;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header .tablet {
+    display: contents;
+  }
+
+  header .tablet ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .tablet .button {
+    padding: 0.1875rem 0.5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
 @media only screen and (max-width: 760px) {
+  /* Mobile */
   header .desktop {
     display: none;
   }
@@ -127,34 +162,9 @@ header .desktop {
     line-height: 1.6;
     color: white;
   }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 1026px) and (orientation: portrait) {
-  header .mobile {
+  header .desktoplogo {
     display: none;
-  }
-
-  header .desktop {
-    display: contents;
-  }
-
-  header .desktop ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    min-width: 420px;
-  }
-
-  header .desktop li {
-    padding: 0;
-  }
-
-  header .desktop .button {
-    padding: 0.1875rem 0.5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
   }
 }
 
